@@ -478,6 +478,13 @@
     }
   ],
   "outputs": {
-
+    "assetLocation": {
+      "type": "string",
+      "value": "[parameters('assetLocation')]"
+    },
+    "adfsTemplateURI": {
+      "type": "string",
+      "value": "[variables('adfsTemplateURI')]"
+   }
   }
 }
