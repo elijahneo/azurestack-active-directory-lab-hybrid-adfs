@@ -135,6 +135,7 @@
             "version": "latest"
           },
           "osDisk": {
+            "name": "[concat(parameters('adVMName'),'-osdisk')]",
             "caching": "ReadWrite",
             "createOption": "FromImage"
           }
@@ -180,6 +181,10 @@
     "ADVMFQDN": {
         "type": "string",
         "value": "[reference(parameters('adVMName')).DnsSettings.Fqdn]"
+    },
+    "assetLocation": {
+      "type": "string",
+      "value": "[parameters('assetLocation')]"
     }
   }
 }
