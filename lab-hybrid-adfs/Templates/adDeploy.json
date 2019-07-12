@@ -135,7 +135,6 @@
             "version": "latest"
           },
           "osDisk": {
-            "name": "[concat(parameters('adVMName'),'-osdisk')]",
             "caching": "ReadWrite",
             "createOption": "FromImage"
           }
